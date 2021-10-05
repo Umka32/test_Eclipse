@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Test</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="wrapper page-header__wrapper">
+      <svg class="page-header__logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      <nav class="page-header__nav page-header__nav--close main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Пункт меню</a></li>
+          <li class="main-nav__item"><a href="#">Пункт меню</a></li>
+          <li class="main-nav__item"><a href="#">Пункт меню</a></li>
+        </ul>
+      </nav>
+      <button class="main-nav__toggle"></button>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="wrapper page-main__wrapper">
+      <div class="block page-main__first-block">
+        <button class="button first-block__button" type="button">
+          <svg class="first-block__icon">
+            <use xlink:href="img/sprite.svg#plus"></use>
+          </svg>
+          <span>Открыть окно</span>
+        </button>
+      </div>
+      <div class="block page-main__second-block">
+        <div class="second-block__inner">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper blandit tellus, at dignissim
+            neque sagittis quis. Praesent et euismod lectus.</p>
+        </div>
+      </div>
+      <div class="block page-main__third-block"></div>
+      <div class="block page-main__fourth-block"></div>
+      <div class="block page-main__fifth-block "></div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="wrapper page-footer__wrapper">
+      <svg class="page-footer__logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      <a href="#" class="page-footer__copyrigth">Копирайт</a>
+    </div>
+  </footer>
+
+  <section class="modal modal--hidden">
+    <button class="button modal__button">Закрыть окно</button>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
