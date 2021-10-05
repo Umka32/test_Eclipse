@@ -4,10 +4,10 @@ function actionModal() {
   const modal = document.querySelector(".modal");
   const buttons = document.querySelectorAll(".button");
   const body = document.querySelector(".page-main");
-  const header = document.querySelector(".page-header")
+  const header = document.querySelector(".page-header");
 
-  for (let button of buttons) {
-    button.addEventListener("click", function () {
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
       modal.classList.toggle("modal--hidden");
       body.classList.toggle("page-main__modal");
       header.classList.toggle("page-main__modal");
