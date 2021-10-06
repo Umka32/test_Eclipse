@@ -12,11 +12,9 @@
   padding: 0;
   min-width: 320px;
   max-width: 1290px;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
-  grid-template-rows: 1fr -webkit-min-content;
-  grid-template-rows: 1fr min-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -33,6 +31,7 @@
   max-width: inherit;
   padding: 25px 0;
   box-sizing: border-box;
+  flex: 0 0 auto;
 }
 
 .page-header__wrapper {
@@ -146,6 +145,7 @@
   padding: 60px 0;
   box-sizing: border-box;
   display: block;
+  flex: 1 0 auto;
 }
 
 .block {
@@ -254,6 +254,7 @@
 .page-footer {
   background-color: #333;
   height: 100px;
+  flex: 0 0 auto;
 }
 
 .page-footer__wrapper {
